@@ -18,3 +18,5 @@ Run in your favorite terminal:
 ```
 github-repos.py
 ```
+
+It will ask your github username, password and organisation name, and will list of urls of all the repos you have access to in that organisation.

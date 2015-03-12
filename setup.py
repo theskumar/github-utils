@@ -2,19 +2,14 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     name="github-utils",
     version="0.1.0",
     author="Saurabh Kumar",
     author_email="me@saurabh-kumar.com",
-    packages=[
-        "github-utils",
-    ],
+    packages=find_packages(exclude=['*tests*']),
     include_package_data=True,
     install_requires=[
         "github3.py==0.9.3"
